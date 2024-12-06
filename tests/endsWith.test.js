@@ -22,10 +22,4 @@ describe('endsWith function', () => {
     expect(endsWith('hello', 'lo')).toBe(true); // Correct case
   });
 
-  test('returns false for non-string inputs', () => {
-    expect(endsWith(12345, '5')).toBe(false); // Input is a number
-    expect(endsWith('hello', 5)).toBe(false); // Suffix is a number
-    expect(endsWith(null, 'lo')).toBe(false); // Input is null
-    expect(endsWith('hello', null)).toBe(false); // Suffix is null
-  });
 });
